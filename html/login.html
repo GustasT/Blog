@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="\Blog\css\login.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-container flex-nav">
+        <div class="nav-header">
+          <h1>Inner <span>Pieces</span></h1>
+          <button class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <nav class="nav-links" id="nav-links">
+          <ul>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="blog.html">Blog</a></li>
+            <li class="nav-link"><a href="about.html">About</a></li>
+            <li class="nav-link" id="contactLink"><a href="#">Contact</a></li>
+            <li class="nav-link"><a href="login.html">Login/Signup</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <section>
+        <div id="loginFormContainer">
+          <form id="form">
+            <button class="button" id="signInButton">Sign in</button>
+            <button class="button" id="signUpButton">Sign up</button>
+            <h1 id="formSticker"></h1>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" />
+            <label for="passwordCheck" class="invisible" id="passwordCheckLabel"
+              >Repeat password:</label
+            >
+            <input
+              type="password"
+              name="passwordCheck"
+              id="passwordCheck"
+              class="invisible"
+            />
+            <button type="submit" class="button" id="formSubmitButton">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div id="signOutContainer">
+          <h1>SIGN OUT</h1>
+          <button class="button" id="signOutButton">Sign Out</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="contact-section">
+        <div class="contact-container">
+          <div class="social-media-icons">
+            <div class="social-media-icon-container">
+              <img
+                src="https://img.icons8.com/material/2x/facebook-new.png"
+                alt="."
+              />
+            </div>
+            <div class="social-media-icon-container">
+              <img
+                src="https://img.icons8.com/material/2x/facebook-messenger.png"
+                alt="."
+              />
+            </div>
+            <div class="social-media-icon-container">
+              <img
+                src="https://img.icons8.com/material/2x/instagram-new.png"
+                alt="."
+              />
+            </div>
+          </div>
+          <div class="contact-form-container">
+            <h2 class="title">Contact</h2>
+            <p class="contact-form-text">Ask me anything</p>
+            <form class="contact-form">
+              <label for="contactFormName">Full Name</label>
+              <input name="contactFormName" type="text" />
+              <label for="contactFormEmail">Email *</label>
+              <input name="contactForEmail" type="email" />
+              <label for="contactFormMessage">Leave Us a Message...</label>
+              <input name="contactFormMessage type="text" />
+            </form>
+            <button class="button">Submit</button>
+          </div>
+        </div>
+      </section>
+      <div class="footer-info">
+        <p>Inner Pieces</p>
+        <p>123-456-7890</p>
+        <p>info@mysite.com</p>
+        <p>@ 2035 by Inner Pieces.</p>
+        <p>Powered and secured by Wix</p>
+      </div>
+    </footer>
+
+    <script src="\Blog\js\login.js"></script>
+  </body>
+</html>

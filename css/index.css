@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+.navbar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link {
+  list-style: none;
+  margin: 20px 1rem;
+}
+
+/* Navbar */
+.navbar {
+  background: lightcyan;
+  position: fixed;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.flex-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-header span {
+  color: rgb(248, 104, 104);
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-toggle {
+  border: transparent;
+  background: transparent;
+  color: red;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  height: 0;
+  overflow: hidden;
+}
+
+.nav-open {
+  height: 100vh;
+}
+
+body main {
+  padding-top: 80px;
+}
+body main .main-page-article {
+  margin: 1.5rem;
+}
+body main .main-page-article .article-picture {
+  width: 100%;
+}
+body main .main-page-article .article-picture img {
+  width: 100%;
+}
+body main .main-page-article .article-text-container {
+  margin: 1rem;
+}
+body main .main-page-article .article-text-container h2 {
+  margin-bottom: 1rem;
+}
+body main .quote-section .quote-container {
+  margin: 1.5rem;
+}
+body main .quote-section .quote-container .quote {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+body main .quote-section .quote-container .quote-author {
+  text-align: center;
+}
+body main .about {
+  text-align: center;
+  background-color: antiquewhite;
+}
+body main .about .about-container {
+  margin: 1.5rem;
+}
+body main .about .about-subtitle {
+  font-size: large;
+}
+body main .about .about-text {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: gray;
+}
+body main .gallery-section .gallery-container .title {
+  text-align: center;
+}
+body main .gallery-section .gallery-container .gallery {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: center;
+}
+body main .gallery-section .gallery-container .gallery .gallery-element {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+}
+body main .gallery-section .gallery-container .gallery .gallery-element img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .newsletter-section .newsletter-container {
+  margin: 1.5rem;
+}
+body main .newsletter-section .newsletter-container .newsletter-text-container .newsletter-text {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+body main .newsletter-section .newsletter-container .newsletter-form input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+}
+body footer {
+  background-color: darkslategray;
+  color: white;
+  padding: 1.5rem;
+}
+body footer .contact-section {
+  background-color: darkslategray;
+  color: white;
+}
+body footer .contact-section .contact-container {
+  margin: 1.5rem;
+}
+body footer .contact-section .contact-container .social-media-icons {
+  display: flex;
+}
+body footer .contact-section .contact-container .social-media-icons .social-media-icon-container {
+  width: 30px;
+  height: 30px;
+}
+body footer .contact-section .contact-container .social-media-icons .social-media-icon-container img {
+  width: 100%;
+  height: 100%;
+}
+body footer .contact-section .contact-container .contact-form-container .button {
+  color: white;
+  border: 1px solid white;
+}
+body footer .contact-section .contact-container .contact-form-container .title {
+  text-align: left;
+  margin-left: 0;
+}
+body footer .contact-section .contact-container .contact-form-container .contact-form input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid white;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+  background-color: darkslategray;
+  color: white;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 1.5rem;
+  text-align: center;
+}
+
+.article-title {
+  margin-bottom: 1rem;
+}
+
+.big-picture {
+  width: 100%;
+  height: 50vh;
+}
+.big-picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-photo-container {
+  margin: 0.5rem;
+  max-width: 100%;
+}
+.about-photo-container img {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.article-text {
+  color: gray;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-header {
+    display: block;
+  }
+  .flex-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+  }
+  .nav-links {
+    height: auto;
+  }
+  ul {
+    text-align: center;
+  }
+  .nav-link {
+    display: inline-block;
+    border-bottom: none;
+  }
+  .nav-links span {
+    padding: 8px 15px;
+    border-radius: 4px;
+  }
+  .big-picture {
+    width: 50%;
+    height: 832px;
+  }
+  .container {
+    display: flex;
+  }
+  .main-post-section {
+    width: 50%;
+    padding-right: 8%;
+    padding-left: 8%;
+  }
+  .recent-posts {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: auto;
+  }
+  .recent-posts .main-page-article {
+    display: flex;
+  }
+  .recent-posts .main-page-article .article-picture {
+    width: 50%;
+  }
+  .recent-posts .main-page-article .article-text-container {
+    width: 50%;
+  }
+  .quote-section {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .quote-section .quote-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .quote-section .quote-container .quote {
+    width: 75%;
+    font-size: 3rem !important;
+  }
+  .about {
+    background-color: white !important;
+  }
+  .about .about-container {
+    display: flex;
+  }
+  .about .about-container .about-photo-container {
+    width: 50%;
+    background-color: antiquewhite;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .about .about-container .about-photo-container img {
+    width: 50%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .about .about-container .about-text-container {
+    width: 50%;
+    text-align: left;
+    padding: 8%;
+  }
+  .about .about-container .about-text-container .title {
+    text-align: left;
+    margin-left: 0;
+  }
+  .newsletter-section .newsletter-container {
+    width: 50%;
+    margin: auto !important;
+  }
+  .gallery-element {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=index.css.map */
